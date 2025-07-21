@@ -1,0 +1,58 @@
+/* Пример кастомных стилей */
+:root {
+	--primary-color: #007bff;
+	--secondary-color: #6c757d;
+	--dark-blue: #1a237e;
+	--light-gray: #f8f9fa;
+}
+
+body {
+	font-family: "Montserrat", sans-serif; /* Пример современного шрифта */
+	color: #333;
+}
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Дополнительные общие стили, если нужны */
+.section-title {
+	position: relative;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+.section-title::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	width: 60px;
+	height: 3px;
+	background-color: var(--primary-color);
+	border-radius: 2px;
+}
+
+.fas, .fab, .far { /* .far для regular иконок, если используете */
+	/* Можно задать базовый цвет по умолчанию */
+	color: #1a237e; /* Пример: темно-синий для всех иконок */
+}
+
+/* Примеры использования других цветов */
+.text-primary .fas,
+.text-primary .fab {
+	color: var(--primary-color) !important; /* Убедимся, что цвета Bootstrap остаются или переопределяются */
+}
+
+.text-secondary .fas,
+.text-secondary .fab {
+	color: var(--secondary-color) !important; /* Серый для контактных иконок */
+}
+
+/* Можно добавить hover эффекты для интерактивных иконок */
+a .fas:hover,
+a .fab:hover {
+	color: var(--dark-blue); /* Акцентный синий при наведении */
+}

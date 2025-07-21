@@ -1,43 +1,41 @@
 {
   "name": "global-distributor-azerbaijan-website",
+  "author": {
+    "email": "office@gda.az",
+    "name": "Nikolai Makarov"
+  },
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "eslint --fix --ext .js,.jsx,.vue src/",
+    "lint:check": "eslint --ext .js,.jsx,.vue src/",
+    "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,vue,html,css,scss,json,md}\""
   },
   "dependencies": {
-    "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "axios": "^1.10.0",
+    "bootstrap": "^5.3.7",
+    "pinia": "^3.0.3",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead",
-    "not ie 11"
-  ]
+    "@babel/core": "^7.24.8",
+    "@babel/eslint-parser": "^7.24.7",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "@vue/compiler-sfc": "^3.4.27",
+    "eslint": "^9.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.3",
+    "eslint-plugin-promise": "^6.2.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "eslint-webpack-plugin": "^5.0.2",
+    "prettier": "^3.6.2",
+    "vue-eslint-parser": "^10.2.0",
+    "vue-loader": "^17.4.2"
+  }
 }
