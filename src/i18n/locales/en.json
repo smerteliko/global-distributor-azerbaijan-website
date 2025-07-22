@@ -1,0 +1,106 @@
+{
+  "header": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC",
+    "subtitle": "Your Gateway to Global Markets: Comprehensive Distribution and Strategic Solutions.",
+    "button": "Explore Our Solutions"
+  },
+  "aboutUs": {
+    "title": "About us",
+    "leadText": "At GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC, we redefine the concept of comprehensive distribution and strategic advisory. With years of experience and a deep understanding of global market dynamics, we specialize in connecting businesses with opportunities across various sectors – from consumer goods and industrial products to cutting-edge IT solutions.",
+    "missionText": "Our mission is to simplify the complexities of international trade and technological advancement for our partners. We pride ourselves on our agile approach, robust global network, and commitment to delivering tailored, efficient, and compliant solutions that drive growth and foster long-term success.",
+    "visionTitle": "Our Vision",
+    "visionText": "To be the leading universal distribution and consulting partner, enabling seamless global commerce and technological innovation for businesses worldwide.",
+    "valuesTitle": "Our Values",
+    "valuesList": {
+      "integrity": "Integrity",
+      "innovation": "Innovation",
+      "partnership": "Partnership",
+      "excellence": "Excellence",
+      "agility": "Agility"
+    },
+    "whyChooseUsTitle": "Why Choose Us",
+    "whyChooseUsList": {
+      "expertiseBold": "Diverse Expertise: ",
+      "expertiseText": "Comprehensive solutions spanning product distribution and IT consulting.",
+      "reachBold": "Global Reach: ",
+      "reachText": "Extensive network ensuring market access and efficient operations.",
+      "tailoredBold": "Tailored Solutions: ",
+      "tailoredText": "Customized strategies designed to meet unique business challenges.",
+      "reliabilityBold": "Reliability & Compliance: ",
+      "reliabilityText": "Commitment to secure, transparent, and compliant international trade."
+    }
+  },
+  "services": {
+    "title": "Our Integrated Solutions",
+    "list": {
+      "globalSourcing": {
+        "title": "Global Sourcing & Distribution",
+        "text": "Specializing in sourcing and distributing a diverse portfolio of products across various industries, from consumer goods to industrial equipment, ensuring timely and reliable delivery worldwide."
+      },
+      "marketEntry": {
+        "title": "Strategic Market Entry",
+        "text": "Guiding businesses through the complexities of new market penetration and expansion, providing strategic insights and localized support to achieve successful market presence."
+      },
+      "supplyChain": {
+        "title": "Supply Chain Optimization",
+        "text": "We streamline your procurement and distribution networks, optimizing every step from supplier selection to final delivery, ensuring efficiency, cost-effectiveness, and resilience."
+      },
+      "itConsulting": {
+        "title": "IT Consulting & Solutions",
+        "text": "Empowering businesses with cutting-edge IT consulting, including digital transformation strategies, system integration, cybersecurity, and cloud solutions to enhance operational efficiency and innovation."
+      },
+      "partnership": {
+        "title": "Partnership & Agency Agreements",
+        "text": "Facilitating the conclusion of robust framework distributor and agency agreements, building strong, mutually beneficial partnerships for effective market representation and growth."
+      },
+      "financial": {
+        "title": "Financial Facilitation",
+        "text": "Providing essential financial support for international transactions, including efficient currency conversion and timely transfers, ensuring smooth and secure financial flows for your global operations."
+      },
+      "tradeCompliance": {
+        "title": "International Trade Compliance",
+        "text": "Navigating the complexities of global trade regulations, we ensure full compliance with international laws, customs procedures, and documentation requirements for seamless cross-border operations."
+      },
+      "reExport": {
+        "title": "Re-export Management",
+        "text": "Expert management of re-export deals when necessary, optimizing logistics and compliance to ensure efficient and compliant movement of goods through various jurisdictions."
+      },
+      "digitalSupplyChain": {
+        "title": "Digital Supply Chain Integration",
+        "text": "Leveraging cutting-edge technology and IT expertise to connect, automate, and optimize your entire supply chain, ensuring real-time visibility, enhanced efficiency, and seamless data flow from supplier to customer."
+      }
+    }
+  },
+  "contact": {
+    "title": "Connect With Us",
+    "introText": "Ready to expand your global reach or optimize your business operations? Our team is here to provide tailored solutions. Contact us today.",
+    "ourContacts": "Our Contacts",
+    "address": "Address",
+    "email": "Email",
+    "phone": "Phone",
+    "telegram": "Telegram",
+    "whatsapp": "WhatsApp",
+    "sendMessage": "Send Us a Message",
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "subject": "Subject",
+    "message": "Message",
+    "sendMessageButton": "Send Message",
+    "findUsOnMap": "Find Us on the Map",
+    "openingHoursTitle": "Our Business Hours",
+    "openingHours": {
+      "weekdays": "Weekdays: 9:00 AM - 6:00 PM (GMT+4)",
+      "weekend": "Weekend and holidays: Closed"
+    },
+    "appointmentNote": "Appointments are recommended for in-person visits."
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  }
+}

@@ -9,7 +9,7 @@ module.exports = defineConfig({
         eslint: {
             quiet: true,
             lintOnSave: false,
-            formatter: 'stylish', // Может быть 'compact', 'html', 'json', 'table'
+            formatter: 'stylish',
         }
     },
   configureWebpack: (config) => {

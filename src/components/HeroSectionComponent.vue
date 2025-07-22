@@ -3,12 +3,14 @@
     id="hero"
     class="hero-section text-white d-flex align-items-center justify-content-center text-center"
   >
-    <div class="container">
-      <h1 class="display-4 mb-3">GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC</h1>
+    <div class="container container-fluid">
+      <h1 class="display-4 mb-3 azerbaijan-flag-gradient-text">{{ $t('hero.title') }}</h1>
       <p class="lead mb-4">
-        Your Gateway to Global Markets: Comprehensive Distribution and Strategic Solutions.
+        {{ $t('hero.subtitle') }}
       </p>
-      <a href="#services" class="btn btn-primary btn-lg custom-btn">Explore Our Solutions</a>
+      <router-link to="/#services" class="btn btn-primary btn-lg custom-btn">
+        {{ $t('hero.button') }}
+      </router-link>
     </div>
   </section>
 </template>
@@ -25,7 +27,7 @@
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('~@/assets/images/hero-bg.jpg') no-repeat center center;
     background-size: cover;
-    height: 60vh; /* Высота для секции */
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +46,7 @@
     z-index: 1;
   }
 
-  .hero-section .container {
+  .hero-section .container-fluid {
     position: relative;
     z-index: 2;
   }
@@ -52,7 +54,10 @@
   .hero-section h1 {
     font-weight: 700;
     font-size: 3.5rem;
-    color: #fff;
+  }
+
+  .hero-section .azerbaijan-flag-gradient-text {
+    color: transparent;
   }
 
   .hero-section p {

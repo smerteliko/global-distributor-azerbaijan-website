@@ -1,0 +1,110 @@
+{
+  "header": {
+    "home": "Ana Səhifə",
+    "aboutUs": "Haqqımızda",
+    "services": "Xidmətlər",
+    "contact": "Əlaqə"
+  },
+  "hero": {
+    "title": "GLOBAL DİSTRİBYUTOR AZƏRBAYCAN MMC",
+    "subtitle": "Qlobal Bazarlara Qapınız: Hərtərəfli Distribusiya və Strateji Həllər.",
+    "button": "Həllərimizi Kəşf Edin"
+  },
+  "aboutUs": {
+    "title": "GLOBAL DİSTRİBYUTOR AZƏRBAYCAN MMC",
+    "leadText": "GLOBAL DİSTRİBYUTOR AZƏRBAYCAN MMC-də biz hərtərəfli distribusiya və strateji məsləhət anlayışını yenidən müəyyənləşdiririk. İllərin təcrübəsi və qlobal bazar dinamikasına dərin anlayışımızla, biz istehlak mallarından sənaye məhsullarına və qabaqcıl İT həllərinə qədər müxtəlif sektorlarda müəssisələri imkanlarla birləşdirməkdə ixtisaslaşırıq.",
+    "missionText": "Missiyamız beynəlxalq ticarətin və texnoloji tərəqqinin mürəkkəbliyini tərəfdaşlarımız üçün sadələşdirməkdir. Biz çevik yanaşmamız, möhkəm qlobal şəbəkəmiz və böyüməni təmin edən, uzunmüddətli uğura zəmin yaradan fərdi, səmərəli və uyğun həllər təqdim etmək öhdəliyimizlə fəxr edirik.",
+    "visionTitle": "Vizyonumuz",
+    "visionText": "Bütün dünyada müəssisələr üçün rəvan qlobal ticarət və texnoloji innovasiyaları təmin edərək, qabaqcıl universal distribusiya və məsləhət tərəfdaşı olmaq.",
+    "valuesTitle": "Dəyərlərimiz",
+    "valuesList": {
+      "integrity": "Dürüstlük",
+      "innovation": "İnnovasiya",
+      "partnership": "Tərəfdaşlıq",
+      "excellence": "Mükəmməllik",
+      "agility": "Çeviklik"
+    },
+    "whyChooseUsTitle": "Niyə Bizi Seçməlisiniz?",
+    "whyChooseUsList": {
+      "expertiseBold": "Müxtəlif Təcrübə: ",
+      "expertiseText": "Məhsul distribusiyasından İT məsləhətçiliyinə qədər hərtərəfli həllər.",
+      "reachBold": "Qlobal Əhatə: ",
+      "reachText": "Bazar girişini və səmərəli əməliyyatları təmin edən geniş şəbəkə.",
+      "tailoredBold": "Fərdi Həllər: ",
+      "tailoredText": "Unikal biznes problemlərinə cavab verən fərdi strategiyalar.",
+      "reliabilityBold": "Etibarlılıq və Uyğunluq: ",
+      "reliabilityText": "Təhlükəsiz, şəffaf və uyğun beynəlxalq ticarətə sadiqlik."
+    }
+  },
+  "services": {
+    "title": "İnteqrasiya Olunmuş Həllərimiz",
+    "note": "Vacib Qeyd: Şirkət logistika xidmətləri göstərmir. Çatdırılma, sığorta və gömrük ödənişləri son alıcı və ya göndərən tərəfindən həyata keçirilir.",
+    "commission": "Komissiya dərəcələri məhsul növündən və əməliyyat həcmindən asılı olaraq dəyişir (konvertasiya, əməliyyat xərcləri və hüquqi dəstək daxildir).",
+    "list": {
+      "globalSourcing": {
+        "title": "Qlobal Təchizat və Distribusiya",
+        "text": "İstehlak mallarından sənaye avadanlıqlarına qədər müxtəlif sahələrdə geniş məhsul portfelinin təchizatı və distribusiyası üzrə ixtisaslaşmışıq, dünya üzrə vaxtında və etibarlı çatdırılmanı təmin edirik."
+      },
+      "marketEntry": {
+        "title": "Strateji Bazar Girişi",
+        "text": "Yeni bazarlara daxil olmağın və genişlənməyin mürəkkəbliklərində müəssisələri yönləndirir, uğurlu bazar mövcudluğunu təmin etmək üçün strateji anlayışlar və yerli dəstək təmin edirik."
+      },
+      "supplyChain": {
+        "title": "Təchizat Zəncirinin Optimallaşdırılması",
+        "text": "Təchizat və distribusiya şəbəkələrinizi sadələşdirir, təchizatçı seçimindən son çatdırılmaya qədər hər addımı optimallaşdıraraq səmərəlilik, xərc effektivliyi və dayanıqlılığı təmin edirik."
+      },
+      "itConsulting": {
+        "title": "İT Məsləhətçiliyi və Həlləri",
+        "text": "Əməliyyat səmərəliliyini və innovasiyaları artırmaq üçün rəqəmsal transformasiya strategiyaları, sistem inteqrasiyası, kiber təhlükəsizlik və bulud həlləri daxil olmaqla, qabaqcıl İT məsləhətçiliyi ilə müəssisələri gücləndiririk."
+      },
+      "partnership": {
+        "title": "Tərəfdaşlıq və Agentlik Müqavilələri",
+        "text": "Möhkəm baza distribyutor və agentlik müqavilələrinin bağlanmasını asanlaşdırır, effektiv bazar təmsilçiliyi və böyümə üçün güclü, qarşılıqlı faydalı tərəfdaşlıqlar qururuq."
+      },
+      "financial": {
+        "title": "Maliyyə Həlləri",
+        "text": "Qlobal əməliyyatlarınız üçün rəvan və təhlükəsiz maliyyə axınlarını təmin edərək, valyuta konvertasiyası və vaxtında köçürmələr daxil olmaqla, beynəlxalq əməliyyatlar üçün əsas maliyyə dəstəyini təmin edirik."
+      },
+      "tradeCompliance": {
+        "title": "Beynəlxalq Ticarət Uyğunluğu",
+        "text": "Qlobal ticarət qaydalarının mürəkkəbliklərində naviqasiya edərək, sərhədlərarası rəvan əməliyyatlar üçün beynəlxalq qanunlara, gömrük prosedurlarına və sənədləşdirmə tələblərinə tam uyğunluğu təmin edirik."
+      },
+      "reExport": {
+        "title": "Re-export İdarəetməsi",
+        "text": "Zəruri hallarda re-export əməliyyatlarının ekspert idarəetməsini təmin edir, müxtəlif yurisdiksiyalar vasitəsilə səmərəli və uyğun mal hərəkətini təmin etmək üçün logistika və uyğunluğu optimallaşdırırıq."
+      },
+      "digitalSupplyChain": {
+        "title": "Rəqəmsal Təchizat Zəncirinin İnteqrasiyası",
+        "text": "Bütün təchizat zəncirinizi birləşdirmək, avtomatlaşdırmaq və optimallaşdırmaq üçün qabaqcıl texnologiya və İT təcrübəsindən istifadə edərək, təchizatçıdan müştəriyə qədər real vaxt görünürlüyü, artırılmış səmərəlilik və fasiləsiz məlumat axını təmin edir."
+      }
+    }
+  },
+  "contact": {
+    "title": "Bizimlə Əlaqə Saxlayın",
+    "introText": "Qlobal əhatənizi genişləndirməyə və ya biznes əməliyyatlarınızı optimallaşdırmağa hazırsınız? Komandamız fərdi həllər təqdim etmək üçün buradadır. Bu gün bizimlə əlaqə saxlayın.",
+    "ourContacts": "Əlaqə Məlumatlarımız",
+    "address": "Ünvan",
+    "email": "E-poçt",
+    "phone": "Telefon",
+    "telegram": "Telegram",
+    "whatsapp": "WhatsApp",
+    "sendMessage": "Bizə Mesaj Göndərin",
+    "yourName": "Adınız",
+    "yourEmail": "E-poçtunuz",
+    "subject": "Mövzu",
+    "message": "Mesajınız",
+    "sendMessageButton": "Mesaj Göndər",
+    "findUsOnMap": "Bizi Xəritədə Tapın",
+    "messageSentSuccess": "Mesajınız uğurla göndərildi!",
+    "messageSentError": "Mesaj göndərilərkən xəta baş verdi. Zəhmət olmasa, daha sonra yenidən cəhd edin.",
+    "openingHoursTitle": "İş Saatlarımız",
+    "openingHours": {
+      "weekdays": "Həftə İçi: 9:00 AM - 6:00 PM (GMT+4)",
+      "weekend": "Həftəsonu və bayram günləri: Qeyri-iş günü"
+    },
+    "appointmentNote": "Şəxsi görüşlər üçün əvvəlcədən təyinat tövsiyə olunur."
+  },
+  "footer": {
+    "copyright": "Bütün hüquqlar qorunur."
+  }
+}

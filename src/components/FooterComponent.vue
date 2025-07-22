@@ -2,7 +2,7 @@
   <footer class="footer bg-dark text-white py-4">
     <div class="container text-center">
       <p class="mb-0">
-        © {{ currentYear }} GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC. All rights reserved.
+        © {{ currentYear }} GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC. {{ $t('footer.copyright') }}
       </p>
     </div>
   </footer>
@@ -21,7 +21,7 @@
 
 <style scoped>
   .footer {
-    background-color: #212529 !important; /* Dark gray */
+    background-color: #212529 !important;
     color: #f8f9fa;
     font-size: 0.9em;
   }

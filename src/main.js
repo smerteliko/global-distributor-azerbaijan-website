@@ -1,9 +1,11 @@
 import { createApp } from 'vue';
 import App from './App.vue';
+import router from './router';
+import i18n from './i18n/i18n';
 
-// Импорт Bootstrap CSS (должен быть до ваших кастомных стилей)
 import 'bootstrap/dist/css/bootstrap.min.css';
-// Импорт Bootstrap JS (для Navbar, Collapse и т.д.)
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './assets/fontawesome/css/all.min.css';
 import './assets/style.css';
-createApp(App).mount('#app');
+
+createApp(App).use(router).use(i18n).mount('#app');

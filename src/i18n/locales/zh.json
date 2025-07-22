@@ -1,0 +1,110 @@
+{
+  "header": {
+    "home": "首页",
+    "aboutUs": "关于我们",
+    "services": "服务",
+    "contact": "联系"
+  },
+  "hero": {
+    "title": "GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC",
+    "subtitle": "您通往全球市场的门户：全面分销与战略解决方案。",
+    "button": "探索我们的解决方案"
+  },
+  "aboutUs": {
+    "title": "关于",
+    "leadText": "在 GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC，我们重新定义了全面分销和战略咨询的概念。凭借多年的经验和对全球市场动态的深刻理解，我们专注于将企业与各个领域的机遇连接起来——从消费品、工业产品到尖端IT解决方案。",
+    "missionText": "我们的使命是为合作伙伴简化国际贸易和技术进步的复杂性。我们为我们的敏捷方法、强大的全球网络以及提供量身定制、高效和合规解决方案的承诺而自豪，这些解决方案能够推动增长并促进长期成功",
+    "visionTitle": "我们的愿景",
+    "visionText": "成为领先的通用分销和咨询合作伙伴，在全球范围内实现无缝的全球贸易和技术创新。",
+    "valuesTitle": "我们的价值观",
+    "valuesList": {
+      "integrity": "诚信",
+      "innovation": "创新",
+      "partnership": "伙伴关系",
+      "excellence": "卓越",
+      "agility": "敏捷"
+    },
+    "whyChooseUsTitle": "为什么选择我们？",
+    "whyChooseUsList": {
+      "expertiseBold": "多元专业： ",
+      "expertiseText": "涵盖产品分销和IT咨询的全面解决方案。",
+      "reachBold": "全球覆盖： ",
+      "reachText": "广泛的网络确保市场准入和高效运营。",
+      "tailoredBold": "量身定制的解决方案： ",
+      "tailoredText": "为应对独特的业务挑战而设计的定制策略。",
+      "reliabilityBold": "可靠性与合规性： ",
+      "reliabilityText": "致力于安全、透明和合规的国际贸易。"
+    }
+  },
+  "services": {
+    "title": "我们的集成解决方案",
+    "note": "重要提示：本公司不提供物流服务。送货、保险和海关付款由最终收件人或发件人处理。",
+    "commission": "佣金费率根据产品类型和交易量而异（包括货币兑换、交易成本和法律支持）。",
+    "list": {
+      "globalSourcing": {
+        "title": "全球采购与分销",
+        "text": "专注于采购和分销涵盖消费品、工业设备和专业组件等各行各业的多元化产品组合，确保全球范围内及时可靠的交付。"
+      },
+      "marketEntry": {
+        "title": "战略市场进入",
+        "text": "指导企业应对新市场进入和扩张的复杂性，提供战略洞察和本地化支持，以实现成功的市场存在。"
+      },
+      "supplyChain": {
+        "title": "供应链优化",
+        "text": "我们简化您的采购和分销网络，优化从供应商选择到最终交付的每一步，确保效率、成本效益和弹性。"
+      },
+      "itConsulting": {
+        "title": "IT咨询与解决方案",
+        "text": "通过尖端IT咨询为企业赋能，包括数字化转型战略、系统集成、网络安全和云解决方案，以提高运营效率和创新。"
+      },
+      "partnership": {
+        "title": "伙伴关系与代理协议",
+        "text": "促进建立强大的框架分销商和代理协议，建立强大、互利的伙伴关系，以实现有效的市场代表和增长。"
+      },
+      "financial": {
+        "title": "金融便利化",
+        "text": "为国际交易提供必要的金融支持，包括高效的货币兑换和及时转账，确保全球业务的顺畅和安全的资金流动。"
+      },
+      "tradeCompliance": {
+        "title": "国际贸易合规",
+        "text": "应对全球贸易法规的复杂性，我们确保完全遵守国际法律、海关程序和文件要求，以实现无缝的跨境操作。"
+      },
+      "reExport": {
+        "title": "再出口管理",
+        "text": "在必要时提供再出口交易的专业管理，优化物流和合规性，以确保货物在不同司法管辖区内的有效和合规流动。"
+      },
+      "digitalSupplyChain": {
+        "title": "数字化供应链整合",
+        "text": "利用尖端技术和IT专业知识，连接、自动化并优化您的整个供应链，确保实时可见性、提高效率，并实现从供应商到客户的无缝数据流。"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "introText": "准备好拓展您的全球业务范围或优化您的业务运营了吗？我们的团队随时为您提供量身定制的解决方案。今天就联系我们吧。",
+    "ourContacts": "我们的联系方式",
+    "address": "地址",
+    "email": "电子邮件",
+    "phone": "电话",
+    "telegram": "电报",
+    "whatsapp": "WhatsApp",
+    "sendMessage": "给我们留言",
+    "yourName": "您的姓名",
+    "yourEmail": "您的电子邮件",
+    "subject": "主题",
+    "message": "您的留言",
+    "sendMessageButton": "发送留言",
+    "findUsOnMap": "在地图上找到我们",
+    "messageSentSuccess": "您的留言已成功发送！",
+    "messageSentError": "发送留言失败。请稍后再试。",
+    "openingHoursTitle": "我们的营业时间",
+    "openingHours": {
+      "weekdays": "工作日：上午 9:00 - 下午 6:00 (GMT+4)",
+      "weekend": "周末及节假日：休息"
+    },
+    "appointmentNote": "建议预约现场参观。"
+  },
+  "footer": {
+    "copyright": "保留所有权利。"
+  }
+}

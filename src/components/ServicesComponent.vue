@@ -1,136 +1,18 @@
 <template>
   <section id="services" class="services-section py-5">
-    <div class="container">
-      <h2 class="section-title text-center mb-5">Our Integrated Solutions</h2>
+    <div class="container container-fluid">
+      <h2 class="section-title text-center mb-5">{{ $t('services.title') }}</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <div class="col">
+        <div v-for="(service, index) in servicesList" :key="index" class="col">
           <div class="card h-100 shadow-sm service-card">
             <div class="card-body">
               <h5 class="card-title text-primary">
-                <i class="fas fa-globe me-2"></i> Global Sourcing & Distribution
+                {{ service.title }}
               </h5>
-              <p class="card-text">
-                Specializing in sourcing and distributing a diverse portfolio of products across
-                various industries, from consumer goods to industrial equipment, ensuring timely and
-                reliable delivery worldwide.
-              </p>
-              <img
-                src="~@/assets/images/services/global-sourcing-distribution.svg"
-                alt="Global Sourcing & Distribution"
-                class="service-image mt-3"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 shadow-sm service-card">
-            <div class="card-body">
-              <h5 class="card-title text-primary">
-                <i class="fas fa-chart-line me-2"></i> Strategic Market Entry
-              </h5>
-              <p class="card-text">
-                Guiding businesses through the complexities of new market penetration and expansion,
-                providing strategic insights and localized support to achieve successful market
-                presence.
-              </p>
-              <!--              <img src="~@/assets/images/services/strategic-market-entry.svg" alt="Strategic Market Entry" class="service-image mt-3">-->
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 shadow-sm service-card">
-            <div class="card-body">
-              <h5 class="card-title text-primary">
-                <i class="fas fa-cogs me-2"></i> Supply Chain Optimization
-              </h5>
-              <p class="card-text">
-                We streamline your procurement and distribution networks, optimizing every step from
-                supplier selection to final delivery, ensuring efficiency, cost-effectiveness, and
-                resilience.
-              </p>
-              <!--              <img src="~@/assets/images/services/supply-chain-optimization.svg" alt="Supply Chain Optimization" class="service-image mt-3">-->
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 shadow-sm service-card">
-            <div class="card-body">
-              <h5 class="card-title text-primary">
-                <i class="fas fa-laptop-code me-2"></i> IT Consulting & Solutions
-              </h5>
-              <p class="card-text">
-                Empowering businesses with cutting-edge IT consulting, including digital
-                transformation strategies, system integration, cybersecurity, and cloud solutions to
-                enhance operational efficiency and innovation.
-              </p>
-              <!--              <img src="~@/assets/images/services/it-consulting-solutions.svg" alt="IT Consulting & Solutions" class="service-image mt-3">-->
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 shadow-sm service-card">
-            <div class="card-body">
-              <h5 class="card-title text-primary">
-                <i class="fas fa-handshake me-2"></i> Partnership & Agency Agreements
-              </h5>
-              <p class="card-text">
-                Facilitating the conclusion of robust framework distributor and agency agreements,
-                building strong, mutually beneficial partnerships for effective market
-                representation and growth.
-              </p>
-              <!--              <img src="~@/assets/images/services/partnership-agreements.svg" alt="Partnership & Agency Agreements" class="service-image mt-3">-->
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 shadow-sm service-card">
-            <div class="card-body">
-              <h5 class="card-title text-primary">
-                <i class="fas fa-money-bill-alt me-2"></i> Financial Facilitation
-              </h5>
-              <p class="card-text">
-                Providing essential financial support for international transactions, including
-                efficient currency conversion and timely transfers, ensuring smooth and secure
-                financial flows for your global operations.
-              </p>
-              <!--              <img src="~@/assets/images/services/financial-facilitation.svg" alt="Financial Facilitation" class="service-image mt-3">-->
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 shadow-sm service-card">
-            <div class="card-body">
-              <h5 class="card-title text-primary">
-                <i class="fas fa-balance-scale me-2"></i> International Trade Compliance
-              </h5>
-              <p class="card-text">
-                Navigating the complexities of global trade regulations, we ensure full compliance
-                with international laws, customs procedures, and documentation requirements for
-                seamless cross-border operations.
-              </p>
-              <!--              <img src="~@/assets/images/services/trade-compliance.svg" alt="International Trade Compliance" class="service-image mt-3">-->
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100 shadow-sm service-card">
-            <div class="card-body">
-              <h5 class="card-title text-primary">
-                <i class="fas fa-redo-alt me-2"></i> Re-export Management
-              </h5>
-              <p class="card-text">
-                Expert management of re-export deals when necessary, optimizing logistics and
-                compliance to ensure efficient and compliant movement of goods through various
-                jurisdictions.
-              </p>
-              <!--              <img src="~@/assets/images/services/re-export-management.svg" alt="Re-export Management" class="service-image mt-3">-->
+              <div class="card-text-wrapper">
+                <p class="card-text">{{ service.text }}</p>
+              </div>
+              <img :src="service.image" :alt="service.title" class="service-image mt-3" />
             </div>
           </div>
         </div>
@@ -142,18 +24,84 @@
 <script>
   export default {
     name: 'Services',
+    data() {
+      return {
+        servicesList: [],
+      };
+    },
+    watch: {
+      '$i18n.locale': {
+        handler() {
+          this.populateServicesList();
+        },
+      },
+    },
+    mounted() {
+      this.populateServicesList();
+    },
+    methods: {
+      populateServicesList() {
+        this.servicesList = [
+          {
+            title: this.$t('services.list.globalSourcing.title'),
+            text: this.$t('services.list.globalSourcing.text'),
+            image: require('@/assets/images/services/global-sourcing-distribution.png'),
+          },
+          {
+            title: this.$t('services.list.marketEntry.title'),
+            text: this.$t('services.list.marketEntry.text'),
+            image: require('@/assets/images/services/strategic-market-entry.png'),
+          },
+          {
+            title: this.$t('services.list.supplyChain.title'),
+            text: this.$t('services.list.supplyChain.text'),
+            image: require('@/assets/images/services/supply-chain-optimization.png'),
+          },
+          {
+            title: this.$t('services.list.itConsulting.title'),
+            text: this.$t('services.list.itConsulting.text'),
+            image: require('@/assets/images/services/it-consulting-solutions.png'),
+          },
+          {
+            title: this.$t('services.list.partnership.title'),
+            text: this.$t('services.list.partnership.text'),
+            image: require('@/assets/images/services/partnership-agreements.png'),
+          },
+          {
+            title: this.$t('services.list.financial.title'),
+            text: this.$t('services.list.financial.text'),
+            image: require('@/assets/images/services/financial-facilitation.png'),
+          },
+          {
+            title: this.$t('services.list.tradeCompliance.title'),
+            text: this.$t('services.list.tradeCompliance.text'),
+            image: require('@/assets/images/services/trade-compliance.png'),
+          },
+          {
+            title: this.$t('services.list.reExport.title'),
+            text: this.$t('services.list.reExport.text'),
+            image: require('@/assets/images/services/re-export-management.png'),
+          },
+          {
+            title: this.$t('services.list.digitalSupplyChain.title'),
+            text: this.$t('services.list.digitalSupplyChain.text'),
+            image: require('@/assets/images/services/digital-supply-chain.png'),
+          },
+        ];
+      },
+    },
   };
 </script>
 
 <style scoped>
   .services-section {
-    background-color: #f8f9fa; /* Light background */
+    background-color: #f8f9fa;
     padding: 80px 0;
   }
 
   .section-title {
     font-size: 2.2em;
-    color: #1a237e; /* Dark blue */
+    color: #1a237e;
     margin-bottom: 25px;
     font-weight: 700;
   }
@@ -161,52 +109,100 @@
   .service-card {
     border: none;
     border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition:
       transform 0.3s ease,
       box-shadow 0.3s ease;
     overflow: hidden;
-    display: flex; /* Для Flexbox */
-    flex-direction: column; /* Элементы в колонку */
-    justify-content: space-between; /* Распределение пространства */
-    align-items: center; /* Центрирование содержимого */
-    text-align: center; /* Центрирование текста */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
   }
 
   .service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12) !important;
   }
 
   .service-card .card-body {
-    flex-grow: 1; /* Чтобы тело карточки занимало доступное пространство */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-bottom: 0; /* Убираем стандартный паддинг, если изображение будет внизу */
+    justify-content: flex-start;
+    padding: 0;
+    width: 100%;
   }
 
   .service-card .card-title {
     font-weight: bold;
     font-size: 1.25em;
     color: #007bff !important;
-  }
-
-  .service-card i {
-    font-size: 1.5em;
-    vertical-align: middle;
+    min-height: 2.5em;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
   }
 
   .service-card .fas {
-    font-size: 1.25em;
-    color: #007bff;
-    margin-right: 10px;
+    font-size: 1.8em;
+    color: #1a237e;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .service-card .card-title span {
+    display: block;
+    width: 100%;
+  }
+
+  .card-text-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .service-card .card-text {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    min-height: 7em;
+    margin-bottom: 0;
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
   }
 
   .service-image {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 767.98px) {
+    .service-card {
+      padding: 15px;
+    }
+    .service-image {
+      max-width: 120px;
+    }
+    .service-card .card-title {
+      font-size: 1.15em;
+      min-height: auto;
+    }
+    .service-card .card-text {
+      min-height: auto;
+    }
   }
 </style>

@@ -1,0 +1,110 @@
+{
+  "header": {
+    "home": "Accueil",
+    "aboutUs": "À Propos",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC",
+    "subtitle": "Votre Porte d'Accès aux Marchés Mondiaux : Distribution Complète et Solutions Stratégiques.",
+    "button": "Découvrir Nos Solutions"
+  },
+  "aboutUs": {
+    "title": "À Propos",
+    "leadText": "Chez GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC, nous redéfinissons le concept de distribution complète et de conseil stratégique. Forts de nombreuses années d'expérience et d'une profonde compréhension de la dynamique du marché mondial, nous sommes spécialisés dans la mise en relation des entreprises avec des opportunités à travers divers secteurs – des biens de consommation et produits industriels aux solutions informatiques de pointe.",
+    "missionText": "Notre mission est de simplifier les complexités du commerce international et de l'avancement technologique pour nos partenaires. Nous sommes fiers de notre approche agile, de notre solide réseau mondial et de notre engagement à fournir des solutions sur mesure, efficaces et conformes qui stimulent la croissance et favorisent le succès à long terme.",
+    "visionTitle": "Notre Vision",
+    "visionText": "Être le principal partenaire universel de distribution et de conseil, permettant un commerce mondial fluide et l'innovation technologique pour les entreprises du monde entier.",
+    "valuesTitle": "Nos Valeurs",
+    "valuesList": {
+      "integrity": "Intégrité",
+      "innovation": "Innovation",
+      "partnership": "Partenariat",
+      "excellence": "Excellence",
+      "agility": "Agilité"
+    },
+    "whyChooseUsTitle": "Pourquoi Nous Choisir ?",
+    "whyChooseUsList": {
+      "expertiseBold": "Expertise Diversifiée: ",
+      "expertiseText": "Solutions complètes couvrant la distribution de produits et le conseil informatique.",
+      "reachBold": "Portée Mondiale: ",
+      "reachText": "Un vaste réseau assurant l'accès au marché et des opérations efficaces.",
+      "tailoredBold": "Solutions Sur Mesure: ",
+      "tailoredText": "Stratégies personnalisées conçues pour relever les défis commerciaux uniques.",
+      "reliabilityBold": "Fiabilité et Conformité: ",
+      "reliabilityText": "Engagement envers un commerce international sécurisé, transparent et conforme."
+    }
+  },
+  "services": {
+    "title": "Nos Solutions Intégrées",
+    "note": "Note Importante : La société ne fournit pas de services logistiques directs. La livraison, l'assurance et les paiements douaniers sont gérés par le destinataire ou l'expéditeur final.",
+    "commission": "Les taux de commission varient en fonction du type de produit et du volume de la transaction (incluant la conversion, les coûts de transaction et le support juridique).",
+    "list": {
+      "globalSourcing": {
+        "title": "Approvisionnement et Distribution Mondiale",
+        "text": "Spécialisés dans l'approvisionnement et la distribution d'un portefeuille diversifié de produits à travers diverses industries, des biens de consommation aux équipements industriels, assurant une livraison rapide et fiable dans le monde entier."
+      },
+      "marketEntry": {
+        "title": "Entrée Stratégique sur le Marché",
+        "text": "Guidant les entreprises à travers les complexités de la pénétration et de l'expansion de nouveaux marchés, en fournissant des informations stratégiques et un soutien localisé pour réussir leur présence sur le marché."
+      },
+      "supplyChain": {
+        "title": "Optimisation de la Chaîne d'Approvisionnement",
+        "text": "Nous rationalisons vos réseaux d'approvisionnement et de distribution, optimisant chaque étape, de la sélection des fournisseurs à la livraison finale, assurant efficacité, rentabilité et résilience."
+      },
+      "itConsulting": {
+        "title": "Conseil et Solutions Informatiques",
+        "text": "Donner aux entreprises les moyens d'utiliser des conseils informatiques de pointe, y compris des stratégies de transformation numérique, l'intégration de systèmes, la cybersécurité et les solutions cloud pour améliorer l'efficacité opérationnelle et l'innovation."
+      },
+      "partnership": {
+        "title": "Accords de Partenariat et d'Agence",
+        "text": "Faciliter la conclusion d'accords de distribution et d'agence cadres robustes, en bâtissant des partenariats solides et mutuellement bénéfiques pour une représentation efficace sur le marché et la croissance."
+      },
+      "financial": {
+        "title": "Facilitation Financière",
+        "text": "Fournir un soutien financier essentiel pour les transactions internationales, y compris une conversion de devises efficace et des transferts opportuns, assurant des flux financiers fluides et sécurisés pour vos opérations mondiales."
+      },
+      "tradeCompliance": {
+        "title": "Conformité au Commerce International",
+        "text": "Naviguant dans les complexités des réglementations commerciales mondiales, nous assurons une conformité totale avec les lois internationales, les procédures douanières et les exigences en matière de documentation pour des opérations transfrontalières fluides."
+      },
+      "reExport": {
+        "title": "Gestion du Ré-export",
+        "text": "Gestion experte des opérations de ré-export si nécessaire, optimisation de la logistique et de la conformité pour assurer un mouvement efficace et conforme des marchandises à travers diverses juridictions."
+      },
+      "digitalSupplyChain": {
+        "title": "Intégration Numérique de la Chaîne d'Approvisionnement",
+        "text": "Exploitant une technologie de pointe et une expertise informatique pour connecter, automatiser et optimiser l'ensemble de votre chaîne d'approvisionnement, assurant une visibilité en temps réel, une efficacité améliorée et un flux de données transparent du fournisseur au client."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "introText": "Prêt à étendre votre portée mondiale ou à optimiser vos opérations commerciales ? Notre équipe est là pour vous fournir des solutions sur mesure. Contactez-nous dès aujourd'hui.",
+    "ourContacts": "Nos Coordonnées",
+    "address": "Adresse",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "telegram": "Télégramme",
+    "whatsapp": "WhatsApp",
+    "sendMessage": "Envoyez-nous un Message",
+    "yourName": "Votre Nom",
+    "yourEmail": "Votre E-mail",
+    "subject": "Sujet",
+    "message": "Votre Message",
+    "sendMessageButton": "Envoyer le Message",
+    "findUsOnMap": "Retrouvez-Nous sur la Carte",
+    "messageSentSuccess": "Votre message a été envoyé avec succès !",
+    "messageSentError": "Échec de l'envoi du message. Veuillez réessayer plus tard.",
+    "openingHoursTitle": "Nos Horaires d'Ouverture",
+    "openingHours": {
+      "weekdays": "En Semaine : 9h00 - 18h00 (GMT+4)",
+      "weekend": "Week-ends et jours fériés : Fermé"
+    },
+    "appointmentNote": "Les rendez-vous sont recommandés pour les visites en personne."
+  },
+  "footer": {
+    "copyright": "Tous droits réservés."
+  }
+}

@@ -1,22 +1,11 @@
 <template>
   <section id="about" class="about-us-section py-5">
-    <div class="container">
+    <div class="container container-fluid">
       <div class="row align-items-center">
         <div class="col-lg-6 mb-4 mb-lg-0">
-          <h2 class="section-title">About Us</h2>
-          <p class="lead">
-            At GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC, we redefine the concept of comprehensive
-            distribution and strategic advisory. With years of experience and a deep understanding
-            of global market dynamics, we specialize in connecting businesses with opportunities
-            across various sectors – from consumer goods and industrial products to cutting-edge IT
-            solutions.
-          </p>
-          <p>
-            Our mission is to simplify the complexities of international trade and technological
-            advancement for our partners. We pride ourselves on our agile approach, robust global
-            network, and commitment to delivering tailored, efficient, and compliant solutions that
-            drive growth and foster long-term success.
-          </p>
+          <h2 class="section-title">{{ $t('aboutUs.title') }}</h2>
+          <p class="lead">{{ $t('aboutUs.leadText') }}</p>
+          <p>{{ $t('aboutUs.missionText') }}</p>
         </div>
         <div class="col-lg-6">
           <img
@@ -28,46 +17,54 @@
         <div class="row mt-5">
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="info-block p-4 rounded shadow-sm h-100">
-              <h4 class="text-primary mb-3"><i class="fas fa-eye me-2"></i> Our Vision</h4>
-              <p>
-                To be the leading universal distribution and consulting partner, enabling seamless
-                global commerce and technological innovation for businesses worldwide.
-              </p>
+              <h4 class="text-primary mb-3">
+                <i class="fas fa-eye me-2"></i>
+                {{ $t('aboutUs.visionTitle') }}
+              </h4>
+              <p>{{ $t('aboutUs.visionText') }}</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="info-block p-4 rounded shadow-sm h-100">
-              <h4 class="text-primary mb-3"><i class="fas fa-heart me-2"></i> Our Values</h4>
+              <h4 class="text-primary mb-3">
+                <i class="fas fa-heart me-2"></i>
+                {{ $t('aboutUs.valuesTitle') }}
+              </h4>
               <ul class="list-unstyled">
-                <li><i class="fas fa-check-circle text-success me-2"></i> Integrity</li>
-                <li><i class="fas fa-check-circle text-success me-2"></i> Innovation</li>
-                <li><i class="fas fa-check-circle text-success me-2"></i> Partnership</li>
-                <li><i class="fas fa-check-circle text-success me-2"></i> Excellence</li>
-                <li><i class="fas fa-check-circle text-success me-2"></i> Agility</li>
+                <li v-for="(value, key) in valuesList" :key="key">
+                  <i class="fas fa-check-circle text-success me-2"></i>
+                  {{ value }}
+                </li>
               </ul>
             </div>
           </div>
 
           <div class="col-lg-4 mb-4">
             <div class="info-block p-4 rounded shadow-sm h-100">
-              <h4 class="text-primary mb-3"><i class="fas fa-award me-2"></i> Why Choose Us</h4>
+              <h4 class="text-primary mb-3">
+                <i class="fas fa-award me-2"></i>{{ $t('aboutUs.whyChooseUsTitle') }}
+              </h4>
               <ul class="list-unstyled">
                 <li>
-                  <i class="fas fa-caret-right text-info me-2"></i> <b>Diverse Expertise:</b>
-                  Comprehensive solutions spanning product distribution and IT consulting.
+                  <i class="fas fa-caret-right text-info me-2"></i>
+                  <span class="fw-bold">{{ $t('aboutUs.whyChooseUsList.expertiseBold') }}</span
+                  >{{ $t('aboutUs.whyChooseUsList.expertiseText') }}
                 </li>
                 <li>
-                  <i class="fas fa-caret-right text-info me-2"></i> <b>Global Reach:</b> Extensive
-                  network ensuring market access and efficient operations.
+                  <i class="fas fa-caret-right text-info me-2"></i>
+                  <span class="fw-bold">{{ $t('aboutUs.whyChooseUsList.reachBold') }}</span
+                  >{{ $t('aboutUs.whyChooseUsList.reachText') }}
                 </li>
                 <li>
-                  <i class="fas fa-caret-right text-info me-2"></i> <b>Tailored Solutions:</b>
-                  Customized strategies designed to meet unique business challenges.
+                  <i class="fas fa-caret-right text-info me-2"></i>
+                  <span class="fw-bold">{{ $t('aboutUs.whyChooseUsList.tailoredBold') }}</span
+                  >{{ $t('aboutUs.whyChooseUsList.tailoredText') }}
                 </li>
                 <li>
-                  <i class="fas fa-caret-right text-info me-2"></i> <b>Reliability & Compliance:</b>
-                  Commitment to secure, transparent, and compliant international trade.
+                  <i class="fas fa-caret-right text-info me-2"></i>
+                  <span class="fw-bold">{{ $t('aboutUs.whyChooseUsList.reliabilityBold') }}</span>
+                  {{ $t('aboutUs.whyChooseUsList.reliabilityText') }}
                 </li>
               </ul>
             </div>
@@ -81,25 +78,51 @@
 <script>
   export default {
     name: 'AboutUs',
+    data() {
+      return {
+        valuesList: [
+          this.$t('aboutUs.valuesList.integrity'),
+          this.$t('aboutUs.valuesList.innovation'),
+          this.$t('aboutUs.valuesList.partnership'),
+          this.$t('aboutUs.valuesList.excellence'),
+          this.$t('aboutUs.valuesList.agility'),
+        ],
+      };
+    },
+    watch: {
+      '$i18n.locale': {
+        handler() {
+          this.valuesList = [
+            this.$t('aboutUs.valuesList.integrity'),
+            this.$t('aboutUs.valuesList.innovation'),
+            this.$t('aboutUs.valuesList.partnership'),
+            this.$t('aboutUs.valuesList.excellence'),
+            this.$t('aboutUs.valuesList.agility'),
+          ];
+        },
+      },
+    },
+    mounted() {
+      this.valuesList = [
+        this.$t('aboutUs.valuesList.integrity'),
+        this.$t('aboutUs.valuesList.innovation'),
+        this.$t('aboutUs.valuesList.partnership'),
+        this.$t('aboutUs.valuesList.excellence'),
+        this.$t('aboutUs.valuesList.agility'),
+      ];
+    },
   };
 </script>
 
 <style scoped>
   .about-us-section {
-    background-color: #fff;
+    background-color: #f8f9fa;
     padding: 80px 0;
   }
 
   .section-title {
     font-size: 2.2em;
-    color: #1a237e; /* Dark blue */
-    margin-bottom: 25px;
-    font-weight: 700;
-  }
-
-  .section-title-slogan {
-    font-size: 2em;
-    color: #1a237e; /* Dark blue */
+    color: #1a237e;
     margin-bottom: 25px;
     font-weight: 700;
   }
