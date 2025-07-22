@@ -5,6 +5,10 @@ const path = require("path");
 module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave: false,
+    publicPath: process.env.NODE_ENV === 'production'
+            ? '/global-distributor-azerbaijan-website/'
+            : '/',
+
     pluginOptions: {
         eslint: {
             quiet: true,
