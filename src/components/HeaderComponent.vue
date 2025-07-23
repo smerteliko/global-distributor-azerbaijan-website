@@ -9,7 +9,7 @@
           class="d-inline-block me-2"
         />
         <span class="azerbaijan-flag-gradient-text d-none d-md-inline">
-          GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC
+          GLOBAL DISTRIBUTOR AZERBAIJAN LLC
         </span>
         <span class="azerbaijan-flag-gradient-text d-md-none">GDA</span>
       </a>

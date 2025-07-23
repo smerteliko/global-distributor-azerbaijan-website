@@ -2,7 +2,7 @@
   <footer class="footer bg-dark text-white py-4">
     <div class="container text-center">
       <p class="mb-0">
-        © {{ currentYear }} GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC. {{ $t('footer.copyright') }}
+        © {{ currentYear }} GLOBAL DISTRIBUTOR AZERBAIJAN LLC. {{ $t('footer.copyright') }}
       </p>
     </div>
     <p class="d-none">Intellectual property of Nikolai Makarov (smerteliko@gmail.com).</p>

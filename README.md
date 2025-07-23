@@ -1,19 +1,19 @@
 
 -----
 
-# GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC - Official Website
+# GLOBAL DISTRIBUTOR AZERBAIJAN LLC - Official Website
 
-This repository contains the source code for the official website of GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC, a universal distributor and provider of strategic IT solutions. The website is developed using Vue.js 3 and Bootstrap 5.
+This repository contains the source code for the official website of GLOBAL DISTRIBUTOR AZERBAIJAN LLC, a universal distributor and provider of strategic IT solutions. The website is developed using Vue.js 3 and Bootstrap 5.
 
 ## About The Project
 
-The website serves as an interactive showcase for GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC, providing information about its services, contacts, advantages, and philosophy. The site is designed with a focus on adaptive design, multilingualism, and a clean, modern aesthetic.
+The website serves as an interactive showcase for GLOBAL DISTRIBUTOR AZERBAIJAN LLC, providing information about its services, contacts, advantages, and philosophy. The site is designed with a focus on adaptive design, multilingualism, and a clean, modern aesthetic.
 
 **Key Features:**
 
 * **Vue.js 3 (Options API):** A modern, reactive framework for building dynamic user interfaces.
 * **Bootstrap 5:** A responsive and stylish frontend library for rapid, cross-browser design.
-* **Multilingualism (Vue I18n):** Support for multiple languages (English, Azerbaijani, Chinese, French, Russian) with user preference persistence.
+* **Multilingualism (Vue I18n):** Support for multiple languages (English, Azerbaijani, Chinese, French) with user preference persistence.
 * **Responsive Design:** Optimized for display on various devices, from smartphones to widescreen monitors.
 * **Clean URLs and Anchors:** Seamless navigation between page sections without reloading, using Vue Router in history mode.
 * **Local Resources:** Fonts (Google Fonts) and icons (Font Awesome) are loaded locally for improved performance and reliability.
