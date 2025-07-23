@@ -3,7 +3,7 @@
     <div class="container container-fluid">
       <h2 class="section-title text-center mb-5">{{ $t('services.title') }}</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <div v-for="(service, index) in servicesList" :key="index" class="col">
+        <div v-for="(service, index) in servicesList" :key="`service-${index}`" class="col">
           <div class="card h-100 shadow-sm service-card">
             <div class="card-body">
               <h5 class="card-title text-primary">

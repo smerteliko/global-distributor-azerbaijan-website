@@ -92,6 +92,9 @@
     "subject": "Subject",
     "message": "Message",
     "sendMessageButton": "Send Message",
+    "sendingMessage": "Sending...",
+    "messageSentSuccess": "Your message has been sent successfully!",
+    "messageSentError": "Failed to send message. Please try again later.",
     "findUsOnMap": "Find Us on the Map",
     "openingHoursTitle": "Our Business Hours",
     "openingHours": {

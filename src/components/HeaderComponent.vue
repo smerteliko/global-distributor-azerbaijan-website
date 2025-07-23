@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img
-          src="@/assets/images/G.png"
+          src="../../public/logo.png"
           alt="Company Logo"
           height="60"
           class="d-inline-block me-2"
@@ -58,7 +58,7 @@
               {{ $i18n.locale.toUpperCase() }}
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLang">
-              <li v-for="locale in availableLocales" :key="locale">
+              <li v-for="locale in availableLocales" :key="`locale-${locale}`">
                 <a class="dropdown-item" href="#" @click.prevent="setLocale(locale)">
                   {{ locale.toUpperCase() }}
                 </a>
@@ -72,6 +72,8 @@
 </template>
 
 <script>
+  //import { Collapse } from 'bootstrap';
+
   export default {
     name: 'Header',
     data() {
@@ -84,11 +86,13 @@
         this.$i18n.locale = locale;
         localStorage.setItem('user-language', locale);
         // const navbarCollapse = document.getElementById('navbarNav');
-        // const bsCollapse =
-        //   bootstrap.Collapse.getInstance(navbarCollapse) ||
-        //   new bootstrap.Collapse(navbarCollapse, { toggle: false });
-        // if (navbarCollapse.classList.contains('show')) {
-        //   bsCollapse.hide();
+        // if (navbarCollapse) {
+        //   // Используем импортированный Collapse
+        //   const bsCollapse =
+        //     Collapse.getInstance(navbarCollapse) || new Collapse(navbarCollapse, { toggle: false });
+        //   if (navbarCollapse.classList.contains('show')) {
+        //     bsCollapse.hide();
+        //   }
         // }
       },
     },

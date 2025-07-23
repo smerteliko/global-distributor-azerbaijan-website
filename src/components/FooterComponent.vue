@@ -5,6 +5,7 @@
         © {{ currentYear }} GLOBAL DISTRIBUTOR AZƏRBAYCAN LLC. {{ $t('footer.copyright') }}
       </p>
     </div>
+    <p class="d-none">Intellectual property of Nikolai Makarov (smerteliko@gmail.com).</p>
   </footer>
 </template>
 

@@ -1,3 +1,9 @@
+/*
+ * Global Distributor Azerbaijan Website
+ *
+ * Developed by Nikolai Makarov (smerteliko@gmail.com)
+ * All rights reserved.
+ */
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';

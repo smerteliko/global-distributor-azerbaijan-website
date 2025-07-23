@@ -22,14 +22,18 @@
     data() {
       return {
         activeSection: 'hero',
+        observer: null,
       };
     },
     watch: {
-      '$route.hash'(newHash) {
-        if (newHash) {
-          this.activeSection = newHash.substring(1);
-          this.updateNavbarActiveLink();
-        }
+      '$route.hash': {
+        handler(newHash) {
+          if (newHash) {
+            this.activeSection = newHash.substring(1);
+            this.updateNavbarActiveLink();
+          }
+        },
+        immediate: true,
       },
     },
     mounted() {
@@ -44,7 +48,7 @@
           threshold: 0,
         };
 
-        const observer = new IntersectionObserver((entries) => {
+        this.observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               this.activeSection = entry.target.id;
@@ -54,7 +58,7 @@
         }, options);
 
         sections.forEach((section) => {
-          observer.observe(section);
+          this.observer.observe(section);
         });
       },
       updateNavbarActiveLink() {

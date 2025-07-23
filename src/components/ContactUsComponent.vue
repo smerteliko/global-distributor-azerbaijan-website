@@ -7,7 +7,7 @@
           <div class="contact-info p-4 rounded shadow-sm h-100">
             <h4 class="mb-3 text-primary">{{ $t('contact.ourContacts') }}</h4>
             <ul class="list-unstyled">
-              <li v-for="(item, index) in contactDetails" :key="index" class="mb-3">
+              <li v-for="(item, index) in contactDetails" :key="`contacts-${index}`" class="mb-3">
                 <i :class="[item.icon, 'me-2', 'text-primary']"></i>
                 <span class="fw-bold">{{ item.label }}:</span>
                 <a
@@ -40,33 +40,66 @@
         <div class="col-lg-6">
           <div class="contact-form p-4 rounded shadow-sm h-100">
             <h4 class="mb-3 text-primary">{{ $t('contact.sendMessage') }}</h4>
-            <form action="https://formspree.io/f/mqalpalv" method="POST">
+            <form @submit.prevent="submitForm">
               <div class="mb-3">
                 <label for="name" class="form-label">{{ $t('contact.yourName') }}</label>
-                <input id="name" type="text" class="form-control" name="name" required />
+                <input
+                  id="name"
+                  v-model="form.name"
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">{{ $t('contact.yourEmail') }}</label>
-                <input id="email" type="email" class="form-control" name="email" required />
+                <input
+                  id="email"
+                  v-model="form.email"
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label for="subject" class="form-label">{{ $t('contact.subject') }}</label>
-                <input id="subject" type="text" class="form-control" name="subject" />
+                <input
+                  id="subject"
+                  v-model="form.subject"
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                />
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">{{ $t('contact.message') }}</label>
                 <textarea
                   id="message"
+                  v-model="form.message"
                   class="form-control"
                   name="message"
                   rows="5"
                   required
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary custom-btn">
-                {{ $t('contact.sendMessageButton') }}
+              <button type="submit" class="btn btn-primary custom-btn" :disabled="isLoading">
+                <span
+                  v-if="isLoading"
+                  class="spinner-border spinner-border-sm me-2"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                {{ isLoading ? $t('contact.sendingMessage') : $t('contact.sendMessageButton') }}
               </button>
             </form>
+            <div v-if="submitStatus === 'success'" class="alert alert-success mt-3" role="alert">
+              {{ $t('contact.messageSentSuccess') }}
+            </div>
+            <div v-if="submitStatus === 'error'" class="alert alert-danger mt-3" role="alert">
+              {{ $t('contact.messageSentError') }}
+            </div>
           </div>
         </div>
       </div>
@@ -90,6 +123,7 @@
 </template>
 
 <script>
+  import axios from 'axios';
   export default {
     name: 'ContactUs',
     data() {
@@ -100,6 +134,8 @@
           subject: '',
           message: '',
         },
+        submitStatus: null, // 'null', 'sending', 'success', 'error'
+        isLoading: false,
         contactDetails: [],
       };
     },
@@ -114,10 +150,36 @@
       this.populateContactDetails();
     },
     methods: {
-      submitForm() {
-        console.log('Form submitted:', this.form);
-        alert('Demo: Message sent. In a real application, it would be sent to a server.');
-        this.resetForm();
+      //action="https://formspree.io/f/mqalpalv" method="POST"
+      async submitForm() {
+        this.isLoading = true; // Показываем спиннер
+        this.submitStatus = 'sending';
+
+        try {
+          const formspreeUrl = 'https://formspree.io/f/mqalpalv';
+
+          const response = await axios.post(formspreeUrl, this.form, {
+            headers: {
+              Accept: 'application/json',
+            },
+          });
+
+          if (response.data && response.data.ok) {
+            this.submitStatus = 'success';
+            this.form = { name: '', email: '', subject: '', message: '' };
+          } else {
+            this.submitStatus = 'error';
+            console.error('Formspree Error:', response.data);
+          }
+        } catch (error) {
+          this.submitStatus = 'error';
+          console.error('Error sending form:', error);
+        } finally {
+          this.isLoading = false;
+          setTimeout(() => {
+            this.submitStatus = null; // Сброс статуса через 5 секунд
+          }, 5000);
+        }
       },
       resetForm() {
         this.form = {
@@ -133,7 +195,7 @@
             label: this.$t('contact.address'),
             icon: 'fas fa-map-marker-alt',
             value:
-              ' AZ1070, Narimanov District, Kaverochkina Street, Building 34/79, Baku, Azerbaijan',
+              ' AZ1070, Narimanov District, Kaverochkin Street, Building 34/79, Baku, Azerbaijan',
           },
           {
             label: this.$t('contact.email'),
@@ -222,6 +284,9 @@
   .custom-btn {
     background-color: #007bff;
     border-color: #007bff;
+    display: flex; /* Чтобы спиннер и текст были в одну линию */
+    align-items: center;
+    justify-content: center;
   }
 
   .custom-btn:hover {
@@ -263,5 +328,10 @@
   .contact-hours-list li .fas {
     font-size: 1em;
     margin-right: 8px;
+  }
+  .spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem; /* Отступ между спиннером и текстом */
   }
 </style>

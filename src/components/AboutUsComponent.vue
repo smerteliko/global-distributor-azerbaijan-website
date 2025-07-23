@@ -4,12 +4,12 @@
       <div class="row align-items-center">
         <div class="col-lg-6 mb-4 mb-lg-0">
           <h2 class="section-title">{{ $t('aboutUs.title') }}</h2>
-          <p class="lead">{{ $t('aboutUs.leadText') }}</p>
+          <p>{{ $t('aboutUs.leadText') }}</p>
           <p>{{ $t('aboutUs.missionText') }}</p>
         </div>
         <div class="col-lg-6">
           <img
-            src="@/assets/images/about-us.jpg"
+            src="../../public/about-us.jpg"
             alt="About Company"
             class="img-fluid rounded shadow-lg"
           />

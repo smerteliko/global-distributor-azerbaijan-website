@@ -1,3 +1,9 @@
+/*
+ * Global Distributor Azerbaijan Website
+ *
+ * Developed by Nikolai Makarov (smerteliko@gmail.com)
+ * All rights reserved.
+ */
 import { createI18n } from 'vue-i18n';
 
 import enMessages from './locales/en.json';
