@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Redirecting...</title>
+	<script>
+		const repoName = 'global-distributor-azerbaijan-website';
+		const baseUrl = window.location.origin + '/' + repoName + '/';
+		let pathAfterRepo = window.location.pathname.substring(window.location.pathname.indexOf('/' + repoName + '/') + repoName.length + 1);
+
+		if (pathAfterRepo.startsWith('/')) {
+			pathAfterRepo = pathAfterRepo.substring(1);
+		}
+
+		const queryString = window.location.search;
+
+		const newUrl = baseUrl + '#' + pathAfterRepo + queryString;
+
+		// Выполняем перенаправление
+		window.location.replace(newUrl);
+	</script>
+</head>
+<body>
+<p>Redirecting to the application...</p>
+</body>
+</html>
